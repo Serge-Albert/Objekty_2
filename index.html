@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="Sun">
+
+
+    <button id="bud">Knopka</button>
+
+    <script>
+        document.getElementById("bud").onclick = () => {
+            let text = document.getElementById("Sun").value
+            console.log(text);
+        }
+    </script>
+
+    <button id="bud">Кнопка</button>
+    <p id="Vorona"></p>
+
+    <script>
+        // document.getElementById("bud").onclick = () => {
+        //     let text = document.getElementById("Sun").value
+        //     console.log(text);
+        // }
+        let arr = [1, 2, 3, 4]
+        arr.forEach(element => {
+            console.log(element + 1 + 2);
+            document.getElementById("Vorona").innerHTML += element + 3 + "<br>"
+        });
+
+    </script>
+
+    <!-- <button id="bud2">Knopka2</button>
+    <div id="container"></div>
+
+    <script>
+        document.getElementById("bud2").onclick = () => {
+            let arr = [1, 2, 3]
+            arr.forEach((element) => {
+                document.getElementById("container").innerHTML += element + '<br>'
+            })
+        }
+    </script> -->
+
+</body>
+
+</html>
